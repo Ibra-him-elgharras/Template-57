@@ -27,6 +27,9 @@ nav ul li{
     cursor: pointer;
     position: relative;
 }
+nav ul li:hover::after{
+    width: 100%;
+}
 nav ul li::after{
     content: "";
     width: 0;
@@ -35,4 +38,6 @@ nav ul li::after{
     position: absolute;
     left: 0;
     bottom: -10px;
+    transition: 0.5s;
 }
+
