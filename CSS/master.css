@@ -10,7 +10,7 @@
     background-color: #ff00ff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 nav{
     background-color: #fff;
@@ -37,6 +37,34 @@ nav ul li::after{
     background: #ff00ff;
     position: absolute;
     left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav-2{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+nav-2 ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+}
+nav-2 ul li:hover::after{
+    width: 100%;
+}
+nav-2 ul li::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff0066;
+    position: absolute;
+    right: 0;
     bottom: -10px;
     transition: 0.5s;
 }
